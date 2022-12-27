@@ -1,6 +1,6 @@
 const canvas = document.querySelector("#game");
 
-const stx = canvas.getContext("2d");
+const ctx = canvas.getContext("2d");
 
 const ground = new Image();
 
@@ -8,12 +8,14 @@ ground.src = "/img/field.png";
 
 const food = new Image();
 
-ground.src = "/img/food.png";
+food.src = "/img/food.png";
 
 let box = 32;
 
 let score = 0;
 
-function drawGame (){
-    
+function drawGame() {
+  ctx.drawImage(ground, 0, 0);
 }
+
+let game = setInterval(drawGame, 100);
