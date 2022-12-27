@@ -9,3 +9,11 @@ ground.src = "/img/field.png";
 const food = new Image();
 
 ground.src = "/img/food.png";
+
+let box = 32;
+
+let score = 0;
+
+function drawGame (){
+    
+}
