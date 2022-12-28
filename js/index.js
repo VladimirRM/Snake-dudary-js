@@ -35,6 +35,10 @@ function direction(event) {
   } else if (event.keyCode == 40 && dir != "up") {
     dir = "down";
   }
+} 
+
+function eatTail(head,arr){
+
 }
 
 function drawGame() {
